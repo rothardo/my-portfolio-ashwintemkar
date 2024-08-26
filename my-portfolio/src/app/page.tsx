@@ -1,10 +1,11 @@
-import Signature from "@/components/Signature";
-import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div>
-      <Signature />
-    </div>
-  );
-}
+import React from "react";
+import AnimatedSignature from "@/components/AnimatedSignature";
+
+const Page = () => (
+  <div className="bg-white">
+    <AnimatedSignature />
+  </div>
+);
+
+export default Page;

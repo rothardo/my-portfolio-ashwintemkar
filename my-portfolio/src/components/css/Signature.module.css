@@ -1,26 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .signature {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-}
-
-.signatureText {
-    font-family: 'Amsterdam', cursive;
-    font-size: 3rem;
-    color: #333;
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    animation: draw 5s ease forwards;
-}
-
-@keyframes draw {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
