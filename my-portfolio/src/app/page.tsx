@@ -1,11 +1,14 @@
+"use client";
+import PageLayout from "@/app/PageLayout";
 
-import React from "react";
-import AnimatedSignature from "@/components/AnimatedSignature";
-
-const Page = () => (
-  <div className="bg-white">
-    <AnimatedSignature />
-  </div>
-);
+const Page = () => {
+  return (
+    <PageLayout>
+      <div className="bg-white">
+        <h1 className="text-gray-900">Welcome to My Portfolio</h1>
+      </div>
+    </PageLayout>
+  );
+};
 
 export default Page;
