@@ -1,19 +1,19 @@
 .svg {
-    margin: 100px;
+  margin: 100px;
 }
 
 .path {
-    stroke-dasharray: 7802.15966796875px;
-    stroke-dashoffset: 7802.15966796875px;
-    animation: LineAnimation 5s linear forwards;
-    animation-delay: 1s;
+  stroke-dasharray: 7802.15966796875px;
+  stroke-dashoffset: 7802.15966796875px;
+  animation: LineAnimation 5s linear forwards;
+  animation-delay: 1s;
 }
 
 @keyframes LineAnimation {
-    from {
-        stroke-dashoffset: 7802.15966796875px;
-    }
-    to {
-        stroke-dashoffset: 0px;
-    }
+  from {
+    stroke-dashoffset: 7802.15966796875px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
 }
