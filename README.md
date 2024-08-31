@@ -79,10 +79,6 @@ To learn more about Next.js and how to extend this portfolio, check out the foll
 
 To deploy this portfolio online, you can use [Vercel](https://vercel.com), which provides a seamless integration with Next.js. For detailed deployment instructions, refer to the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Contact
 
 If you have any questions or feedback, feel free to reach out:
