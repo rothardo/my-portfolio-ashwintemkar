@@ -6,18 +6,19 @@ import Featured from "@/app/sections/Featured";
 import Hero from "@/app/sections/Hero";
 import Jobs from "@/app/sections/Jobs";
 import Projects from "./sections/Projects";
+import ThemeWrapper from "@/components/ThemeWrapper";
 
 const Page = () => {
   return (
     <PageLayout>
-      <div className="bg-white-100">
+      <ThemeWrapper>
         <Hero />
         <About />
         <Jobs />
         <Projects />
         <Featured />
         <Contact />
-      </div>
+      </ThemeWrapper>
     </PageLayout>
   );
 };
