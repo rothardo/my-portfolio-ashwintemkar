@@ -10,13 +10,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "theme-blue": "#1E3A8A",
-        "theme-red": "#B91C1C",
-        "theme-black": "#111827",
         "light-gray": "#D6DBDC",
         "dark-gray": "#1F2937",
         "text-light": "#111827",
         "text-dark": "#FFFFFF",
+        "highlight-green": "#4CAF50", 
+        "accent-dark": "#374151", 
+        "accent-light": "#9CA3AF",
       },
       backgroundColor: {
         "bg-light": "#FFFFFF",
@@ -29,6 +29,11 @@ const config: Config = {
       textColor: {
         "text-light": "#111827",
         "text-dark": "#FFFFFF",
+        "highlight-green": "#2D6A4F",
+      },
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+        code: ["Fira Code", "monospace"],
       },
     },
   },

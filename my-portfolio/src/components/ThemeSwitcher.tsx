@@ -28,21 +28,18 @@ const ThemeSwitcher = () => {
 
   return (
     <div className="relative flex items-center">
-      {/* Sun Icon */}
       <SunIcon
         size={24}
         className={`absolute left-1 ${
           theme === "dark" ? "text-yellow-400" : "text-transparent"
         }`}
       />
-      {/* Moon Icon */}
       <MoonIcon
         size={24}
         className={`absolute right-1 ${
           theme === "light" ? "text-gray-300" : "text-transparent"
         }`}
       />
-      {/* Toggle Switch */}
       <label className="relative inline-flex items-center cursor-pointer">
         <input
           type="checkbox"
