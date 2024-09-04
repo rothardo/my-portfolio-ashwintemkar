@@ -3,7 +3,7 @@ import { FC } from "react";
 const Hero: FC = () => {
   return (
     <section className="flex flex-col items-start justify-center min-h-screen bg-light-gray dark:bg-dark-gray text-text-light dark:text-text-dark p-8">
-      <div className="flex flex-col items-start max-w-3xl mx-auto text-left">
+      <div className="flex flex-col items-start max-w-6xl mx-auto text-left">
         <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium mb-4 text-highlight-green font-code">
           Hi, I am  
         </h3>
