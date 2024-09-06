@@ -41,13 +41,13 @@ pre {
 }
 
 ::selection {
-  background-color: #4CAF50; 
-  color: #FFFFFF;
+  background-color: #4caf50;
+  color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   ::selection {
-    background-color: #2D6A4F;
-    color: #FFFFFF;
+    background-color: #2d6a4f;
+    color: #ffffff;
   }
 }
