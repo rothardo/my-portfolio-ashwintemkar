@@ -3,6 +3,20 @@ import ashwin from "@/images/ashwin.jpeg";
 import Image from "next/image";
 
 const About: FC = () => {
+  const technologies = [
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "PostgreSQL",
+    "MySQL",
+    "Prisma",
+    "Docker",
+    "AWS",
+    "Tailwind CSS",
+  ];
   return (
     <section className="flex flex-col justify-center items-start min-h-screen bg-light-gray dark:bg-dark-gray text-text-light dark:text-text-dark p-8">
       <div className="max-w-4xl mx-auto mb-6">
@@ -34,8 +48,8 @@ const About: FC = () => {
         </div>
         <div className="flex-1 text-left">
           <p className="text-base sm:text-lg md:text-xl mb-6 text-accent-light dark:text-accent-light">
-            I’m Ashwin Temkar, a problem-solver and tech enthusiast. I completed
-            my Computer Science and Engineering degree last year, and I’ve been
+            I'm Ashwin Temkar, a problem-solver and tech enthusiast. I completed
+            my Computer Science and Engineering degree last year, and I've been
             building innovative solutions ever since.
           </p>
           <p className="text-base sm:text-lg md:text-xl mb-6 text-accent-light dark:text-accent-light">
@@ -46,21 +60,25 @@ const About: FC = () => {
           </p>
           <p className="text-base sm:text-lg md:text-xl mb-6 text-accent-light dark:text-accent-light">
             With a passion for continuous growth, my skills speak louder than
-            words. While experience is a journey, I’ve already turned many rocks
+            words. While experience is a journey, I've already turned many rocks
             and delivered tangible results. My open-source contributions are
-            just a glimpse of what’s coming next.
+            just a glimpse of what's coming next.
           </p>
           <p className="text-base sm:text-lg md:text-xl mb-6 text-highlight-green dark:text-highlight-green">
-            There’s more to come as I continue my journey—stay tuned!
+            There's more to come as I continue my journey—stay tuned!
           </p>
-
-          <ul className="list-square ml-6 text-base sm:text-lg md:text-xl mb-6 text-accent-light dark:text-accent-light">
-            <li>React & Next.js</li>
-            <li>Node.js & Express.js</li>
-            <li>PostgreSQL & Prisma</li>
-            <li>Docker & Kubernetes</li>
-            <li>Tailwind CSS & Responsive Design</li>
-            <li>TypeScript & JavaScript</li>
+          <p className="text-base sm:text-lg md:text-xl mb-6 text-accent-light dark:text-accent-light">
+            Here are a few technologies I’ve been working with recently:
+          </p>
+          <ul className="grid grid-cols-2 gap-2 list-disc pl-5">
+            {technologies.map((tech, index) => (
+              <li
+                key={index}
+                className="text-base sm:text-lg md:text-xl text-accent-light dark:text-accent-light"
+              >
+                {tech}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
