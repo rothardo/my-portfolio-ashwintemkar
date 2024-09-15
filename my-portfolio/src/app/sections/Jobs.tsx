@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
-import { jobData } from "../data/data";
 import { Job } from "../types/type";
+import { jobData } from "../data/data";
+import Badge from "@/components/badge";
 
 const Jobs: FC = () => {
   const [selectedJob, setSelectedJob] = useState<Job | null>(jobData[0]);
@@ -21,8 +22,26 @@ const Jobs: FC = () => {
           ))}
         </ul>
       </nav>
-      <div style={{ padding: "20px" }}>
-        {selectedJob ? <></> : <p>Select a job to see details.</p>}
+      <div style={{ padding: "20px", flex: 1 }}>
+        {selectedJob ? (
+          <>
+            <h2>{selectedJob.title}</h2>
+            <h3>{selectedJob.role}</h3>
+            <h4>{selectedJob.timeline}</h4>
+            <div>
+              {selectedJob.stack.map((tech) => (
+                <Badge key={tech} text={tech} />
+              ))}
+            </div>
+            <ul>
+              {selectedJob.description.map((desc, index) => (
+                <li key={index}>{desc}</li>
+              ))}
+            </ul>
+          </>
+        ) : (
+          <p>Select a job to see details.</p>
+        )}
       </div>
     </div>
   );
