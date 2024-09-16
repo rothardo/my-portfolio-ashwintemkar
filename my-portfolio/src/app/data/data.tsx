@@ -2,6 +2,20 @@ import { Job } from "../types/type";
 
 export const jobData: Job[] = [
   {
+    id: "0",
+    title: "Wisestep",
+    role: "Full Stack Engineer",
+    timeline: "Mar 2024 - Sep 2024 (7 months)",
+    description: [
+      "Developed scalable B2B modules that automated key workflows like timesheet management and custom fields creation, empowering businesses to streamline their data handling processes effortlessly.",
+      "Spearheaded a centralized CSV export system, optimized filtering and sorting mechanisms for real-time reporting, cutting manual effort by 50%, and drastically enhancing the accuracy of decision-making data.",
+      "Developed reusable UI components, such as search dropdowns and range sliders, leading to a 30% increase in user interaction and satisfaction.",
+      "Refined system reliability by fixing over 15+ critical bugs and optimizing existing modules, ensuring smooth user experiences across different environments.",
+      "Worked closely with stakeholders to shape product architecture, ensuring the entire system was modular, extensible, and responsive to evolving client needs.",
+    ],
+    stack: ["JavaScript", "React", "Node.js", "CSS", "B2B Applications"],
+  },
+  {
     id: "1",
     title: "ITLSCO LLP",
     role: "Software Engineer",
