@@ -7,35 +7,37 @@ const Jobs: FC = () => {
   const [selectedJob, setSelectedJob] = useState<Job | null>(jobData[0]);
 
   return (
-    <div style={{ display: "flex" }}>
-      <nav style={{ width: "200px", borderRight: "1px solid #ccc" }}>
-        <h2>Job Experiences</h2>
+    <section className="flex flex-col md:flex-row max-w-6xl mx-auto p-8 bg-light-gray dark:bg-dark-gray text-text-light dark:text-text-dark min-h-screen">
+      <nav className="flex-none w-full md:w-1/4 border-r border-gray-300 dark:border-gray-700 mb-6 md:mb-0">
+        <h2 className="text-xl font-bold mb-4">Job Experiences</h2>
         <ul>
           {jobData.map((job) => (
             <li
               key={job.id}
               onClick={() => setSelectedJob(job)}
-              style={{ cursor: "pointer", padding: "5px" }}
+              className="cursor-pointer p-2 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors duration-200"
             >
               {job.title}
             </li>
           ))}
         </ul>
       </nav>
-      <div style={{ padding: "20px", flex: 1 }}>
+      <div className="flex-1 p-4">
         {selectedJob ? (
           <>
-            <h2>{selectedJob.title}</h2>
-            <h3>{selectedJob.role}</h3>
-            <h4>{selectedJob.timeline}</h4>
-            <div>
+            <h2 className="text-2xl font-bold mb-2">{selectedJob.title}</h2>
+            <h3 className="text-xl font-semibold mb-1">{selectedJob.role}</h3>
+            <h4 className="text-md mb-2">{selectedJob.timeline}</h4>
+            <div className="flex flex-wrap mb-4">
               {selectedJob.stack.map((tech) => (
                 <Badge key={tech} text={tech} />
               ))}
             </div>
-            <ul>
+            <ul className="list-disc pl-5">
               {selectedJob.description.map((desc, index) => (
-                <li key={index}>{desc}</li>
+                <li key={index} className="mb-2">
+                  {desc}
+                </li>
               ))}
             </ul>
           </>
@@ -43,7 +45,7 @@ const Jobs: FC = () => {
           <p>Select a job to see details.</p>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
