@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
 import { Job } from "../types/type";
 import { jobData } from "../data/data";
-import Badge from "@/components/badge";
 import JobNav from "@/components/JobNav";
+import DescriptionPanel from "@/components/DescriptionPanel";
 
 const Jobs: FC = () => {
   const [selectedJob, setSelectedJob] = useState<Job | null>(jobData[0]);
@@ -14,29 +14,7 @@ const Jobs: FC = () => {
         selectedJobId={selectedJob?.id}
         onSelectJob={setSelectedJob}
       />
-      <div className="flex-1 p-4">
-        {selectedJob ? (
-          <>
-            <h2 className="text-2xl font-bold mb-2">{selectedJob.title}</h2>
-            <h3 className="text-xl font-semibold mb-1">{selectedJob.role}</h3>
-            <h4 className="text-md mb-2">{selectedJob.timeline}</h4>
-            <div className="flex flex-wrap mb-4">
-              {selectedJob.stack.map((tech) => (
-                <Badge key={tech} text={tech} />
-              ))}
-            </div>
-            <ul className="list-disc pl-5">
-              {selectedJob.description.map((desc, index) => (
-                <li key={index} className="mb-2">
-                  {desc}
-                </li>
-              ))}
-            </ul>
-          </>
-        ) : (
-          <p>Select a job to see details.</p>
-        )}
-      </div>
+      <DescriptionPanel job={selectedJob} />
     </section>
   );
 };
