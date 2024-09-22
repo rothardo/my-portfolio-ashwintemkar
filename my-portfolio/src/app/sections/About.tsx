@@ -1,6 +1,7 @@
 import { FC } from "react";
 import ashwin from "@/images/ashwin.jpeg";
 import Image from "next/image";
+import SectionContainer from "@/components/SectionContainer";
 
 const About: FC = () => {
   const technologies = [
@@ -18,7 +19,7 @@ const About: FC = () => {
     "Tailwind CSS",
   ];
   return (
-    <section className="flex flex-col justify-center items-start min-h-screen bg-light-gray dark:bg-dark-gray text-text-light dark:text-text-dark p-8">
+    <SectionContainer>
       <div className="max-w-4xl mx-auto mb-6">
         <h2 className="text-left text-3xl font-extrabold text-accent-light dark:text-white">
           About Me
@@ -82,7 +83,7 @@ const About: FC = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 

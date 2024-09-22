@@ -1,11 +1,12 @@
+import SectionContainer from "@/components/SectionContainer";
 import { FC } from "react";
 
 const Hero: FC = () => {
   return (
-    <section className="flex flex-col items-start justify-center min-h-screen bg-light-gray dark:bg-dark-gray text-text-light dark:text-text-dark p-8">
+    <SectionContainer>
       <div className="flex flex-col items-start max-w-6xl mx-auto text-left">
         <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium mb-4 text-highlight-green font-code">
-          Hi, I am  
+          Hi, I am
         </h3>
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 text-accent-light dark:text-white font-sans">
           Ashwin Temkar
@@ -36,7 +37,7 @@ const Hero: FC = () => {
           .
         </p>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 
