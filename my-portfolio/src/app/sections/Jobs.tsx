@@ -10,13 +10,21 @@ const Jobs: FC = () => {
 
   return (
     <SectionContainer>
+      <div className="max-w-4xl mx-auto mb-6">
+        <h2 className="text-left text-3xl font-extrabold text-accent-light dark:text-white">
+          Job Experiences
+        </h2>
+      </div>
+
       <div className="flex flex-col md:flex-row max-w-4xl mx-auto text-left">
         <JobNav
           jobData={jobData}
           selectedJobId={selectedJob?.id}
           onSelectJob={setSelectedJob}
         />
-        <DescriptionPanel job={selectedJob} />
+        <div className="flex-1">
+          <DescriptionPanel job={selectedJob} />
+        </div>
       </div>
     </SectionContainer>
   );

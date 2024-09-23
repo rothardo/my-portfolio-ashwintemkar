@@ -9,21 +9,28 @@ interface JobNavProps {
 
 const JobNav: FC<JobNavProps> = ({ jobData, selectedJobId, onSelectJob }) => {
   return (
-    <nav className="flex-none w-full md:w-1/4 border-r border-gray-300 dark:border-gray-700 mb-6 md:mb-0 overflow-y-auto scrollbar-hide">
-      <h2 className="text-xl font-bold mb-4">Job Experiences</h2>
-      <ul className="space-y-2">
+    <nav className="flex-none w-full md:w-1/4 mb-6 md:mb-0">
+      <ul className="flex overflow-x-auto space-x-2 md:block scrollbar-hide">
         {jobData.map((job) => (
           <li
             key={job.id}
             onClick={() => onSelectJob(job)}
-            className={`cursor-pointer p-3 transition-all duration-300 rounded-lg 
+            className={`flex-none cursor-pointer p-4 transition-all duration-300 rounded-lg border 
               ${
                 selectedJobId === job.id
-                  ? "bg-blue-200 dark:bg-blue-800 shadow-lg"
-                  : "hover:bg-blue-100 dark:hover:bg-blue-700"
+                  ? "bg-green-100 dark:bg-green-800 shadow-lg border-green-300 dark:border-green-600"
+                  : "bg-white dark:bg-gray-800 hover:bg-green-50 dark:hover:bg-green-700 border-gray-300 dark:border-gray-700"
               }`}
           >
-            {job.title}
+            <span
+              className={`text-sm ${
+                selectedJobId === job.id
+                  ? "text-white"
+                  : "text-gray-500 dark:text-gray-200"
+              }`}
+            >
+              {job.title}
+            </span>
           </li>
         ))}
       </ul>
