@@ -9,13 +9,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      spacing: {
+        "1/10": "10%",
+      },
       colors: {
         "light-gray": "#D6DBDC",
         "dark-gray": "#1F2937",
         "text-light": "#111827",
         "text-dark": "#FFFFFF",
-        "highlight-green": "#4CAF50", 
-        "accent-dark": "#374151", 
+        "highlight-green": "#4CAF50",
+        "accent-dark": "#374151",
         "accent-light": "#9CA3AF",
       },
       backgroundColor: {
