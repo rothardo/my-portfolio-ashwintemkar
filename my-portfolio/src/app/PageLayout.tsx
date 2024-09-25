@@ -14,7 +14,6 @@ const PageLayout = ({ children }: { children: ReactNode }) => {
 
   return (
     <>
-      <Nav />
       <div>{loading ? <Loader /> : children}</div>
     </>
   );
