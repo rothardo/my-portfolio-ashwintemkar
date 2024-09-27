@@ -2,13 +2,18 @@ import { FC, ReactNode } from "react";
 
 interface SideProps {
   children: ReactNode;
+  orientation: "left" | "right";
 }
 
-const Side: FC<SideProps> = ({ children }) => {
+const Side: FC<SideProps> = ({ children, orientation }) => {
   return (
-    <aside className="flex items-center justify-center h-screen w-1/10 p-4 bg-gray-50 dark:bg-gray-800">
+    <div
+      className={`fixed ${orientation === "left" ? "left-0" : "right-0"} 
+                  bottom-0 w-1/10 bg-gray-50 dark:bg-gray-800 
+                  flex flex-col items-center mb-8`}
+    >
       {children}
-    </aside>
+    </div>
   );
 };
 

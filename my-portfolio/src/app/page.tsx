@@ -8,30 +8,30 @@ import Jobs from "@/app/sections/Jobs";
 import Projects from "./sections/Projects";
 import ThemeWrapper from "@/components/ThemeWrapper";
 import Side from "@/components/Side";
+import Nav from "@/components/Nav";
 import Social from "@/components/Social";
 import Email from "@/components/Email";
-import Nav from "@/components/Nav";
 
 const Page = () => {
   return (
     <div className="flex h-screen">
-      <Side>
+      <Nav />
+      <Side orientation="left">
         <Social />
       </Side>
-      <div className="flex-1 overflow-y-auto h-full">
-        <PageLayout>
-          <ThemeWrapper>
-            <Nav />
+      <div className="flex-1 overflow-y-auto flex">
+        <ThemeWrapper className="pl-10 flex-1">
+          <PageLayout>
             <Hero />
             <About />
             <Jobs />
             <Projects />
             <Featured />
             <Contact />
-          </ThemeWrapper>
-        </PageLayout>
+          </PageLayout>
+        </ThemeWrapper>
       </div>
-      <Side>
+      <Side orientation="right">
         <Email emailAddress="ashwintemkar@gmail.com" />
       </Side>
     </div>
