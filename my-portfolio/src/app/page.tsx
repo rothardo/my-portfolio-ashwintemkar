@@ -14,13 +14,13 @@ import Email from "@/components/Email";
 
 const Page = () => {
   return (
-    <div className="flex h-screen">
+    <div className="relative flex h-[100%]">
       <Nav />
       <Side orientation="left">
         <Social />
       </Side>
-      <div className="flex-1 overflow-y-auto flex">
-        <ThemeWrapper className="pl-10 flex-1">
+      <div className="flex flex-1">
+        <ThemeWrapper className=" md:px-12 lg:px-16 flex-1">
           <PageLayout>
             <Hero />
             <About />

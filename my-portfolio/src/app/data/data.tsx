@@ -1,5 +1,11 @@
 import { Job } from "../types/type";
 
+import twitter from "@/components/icons/twitter.svg";
+import linkedin from "@/components/icons/linkedin.svg";
+import github from "@/components/icons/github.svg";
+import website from "@/components/icons/globe.svg";
+import instagram from "@/components/icons/instagram.svg";
+
 export const jobData: Job[] = [
   {
     id: "0",
@@ -49,5 +55,21 @@ export const jobData: Job[] = [
       "Optimized database management using MySQL, ensuring scalable data storage, retrieval, and improved system performance.",
     ],
     stack: ["Java EE", "Microservices", "Jenkins", "AI/ML", "MySQL"],
+  },
+];
+
+export const social = [
+  { href: "https://github.com/yourprofile", src: github, alt: "GitHub" },
+  {
+    href: "https://linkedin.com/in/yourprofile",
+    src: linkedin,
+    alt: "LinkedIn",
+  },
+  { href: "https://twitter.com/yourprofile", src: twitter, alt: "Twitter" },
+  { href: "https://yourwebsite.com", src: website, alt: "Website" },
+  {
+    href: "https://instagram.com/yourprofile", // Fixed the link to include 'https://'
+    src: instagram,
+    alt: "Instagram",
   },
 ];

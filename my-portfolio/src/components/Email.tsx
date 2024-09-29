@@ -6,20 +6,18 @@ interface EmailProps {
 
 const Email: FC<EmailProps> = ({ emailAddress }) => {
   return (
-    <div className="flex flex-col items-center mb-8">
-      {" "}
-      {/* Added margin bottom */}
-      <div className="transform rotate-90 origin-bottom-left">
-        <a
-          href={`mailto:${emailAddress}`}
-          className="text-sm font-mono text-gray-800 dark:text-gray-200 hover:translate-y-[-3px] transition-transform"
-          aria-label={`Email: ${emailAddress}`}
-        >
-          {emailAddress}
-        </a>
-      </div>
-      <div className="w-px h-32 bg-light-slate mt-1"></div>{" "}
-      {/* Vertical line */}
+    <div className="flex flex-col items-end mb-8">
+      <ul className="m-0 p-0 list-none">
+        <li className="transform rotate-90">
+          <a
+            href={`mailto:${emailAddress}`}
+            className="transition-colors duration-300 group-hover:filter group-hover:brightness-0 group-hover:invert group-hover:sepia group-hover:brightness-150 group-hover:hue-rotate-[90deg]"
+            aria-label={`Email: ${emailAddress}`}
+          >
+            {emailAddress}
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };

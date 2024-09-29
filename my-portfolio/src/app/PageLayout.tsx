@@ -2,13 +2,18 @@ import { ReactNode, useState, useEffect } from "react";
 import Loader from "@/components/Loader";
 import "./globals.css";
 
-const PageLayout = ({ children }: { children: ReactNode }) => {
+interface PageLayoutProps {
+  children: ReactNode;
+  loadingTime?: number;
+}
+
+const PageLayout = ({ children, loadingTime = 3000 }: PageLayoutProps) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000);
+    const timer = setTimeout(() => setLoading(false), loadingTime);
     return () => clearTimeout(timer);
-  }, []);
+  }, [loadingTime]);
 
   return <div>{loading ? <Loader /> : <div>{children}</div>}</div>;
 };

@@ -1,32 +1,33 @@
 import { FC } from "react";
+import Image from "next/image";
+import { social } from "@/app/data/data";
 
 const Social: FC = () => {
   return (
     <div className="flex flex-col items-center mb-8">
-      {" "}
-      {/* Added margin bottom */}
-      <ul className="m-0 p-0 list-none">
-        <li className="mb-2">
-          <a
-            href="https://twitter.com/yourusername"
-            className="transform rotate-90 origin-bottom-left text-sm font-mono text-gray-800 dark:text-gray-200 hover:translate-y-[-3px] transition-transform"
-            aria-label="Twitter"
+      <ul className="m-0 p-0 list-none space-y-4">
+        {social.map((icon, index) => (
+          <li
+            key={index}
+            className="transform transition-transform duration-300 hover:-translate-y-2"
           >
-            Twitter
-          </a>
-        </li>
-        <li className="mb-2">
-          <a
-            href="https://linkedin.com/in/yourusername"
-            className="transform rotate-90 origin-bottom-left text-sm font-mono text-gray-800 dark:text-gray-200 hover:translate-y-[-3px] transition-transform"
-            aria-label="LinkedIn"
-          >
-            LinkedIn
-          </a>
-        </li>
+            <a
+              href={icon.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <Image
+                src={icon.src}
+                alt={icon.alt}
+                width={24}
+                height={24}
+                className="transition-colors duration-300 group-hover:filter group-hover:brightness-0 group-hover:invert group-hover:sepia group-hover:brightness-150 group-hover:hue-rotate-[90deg]"
+              />
+            </a>
+          </li>
+        ))}
       </ul>
-      <div className="w-px h-32 bg-light-slate mt-1"></div>{" "}
-      {/* Vertical line */}
     </div>
   );
 };
