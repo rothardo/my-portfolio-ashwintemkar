@@ -5,7 +5,6 @@ import linkedin from "@/components/icons/linkedin.svg";
 import github from "@/components/icons/github.svg";
 import website from "@/components/icons/globe.svg";
 import instagram from "@/components/icons/instagram.svg";
-
 export const jobData: Job[] = [
   {
     id: "0",
@@ -27,6 +26,7 @@ export const jobData: Job[] = [
       "Prisma",
       "PostgreSQL",
     ],
+    link: "https://wisestep.com",
   },
   {
     id: "1",
@@ -40,6 +40,7 @@ export const jobData: Job[] = [
       "Built financial tools for tracking CAPEX and OPEX, delivering real-time financial insights and enabling stakeholders to make data-driven decisions faster.",
     ],
     stack: ["Java", "JSF", "J2EE", "Eclipse link", "MySQL"],
+    link: "https://itlsco.com",
   },
   {
     id: "2",
@@ -55,6 +56,7 @@ export const jobData: Job[] = [
       "Optimized database management using MySQL, ensuring scalable data storage, retrieval, and improved system performance.",
     ],
     stack: ["Java EE", "Microservices", "Jenkins", "AI/ML", "MySQL"],
+    link: "https://itlsco.com",
   },
 ];
 

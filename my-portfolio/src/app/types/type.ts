@@ -3,6 +3,7 @@ export interface Job {
   title: string;
   role: string;
   timeline: string;
+  link: string;
   description: string[];
   stack: string[];
 }

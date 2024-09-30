@@ -13,9 +13,11 @@ const DescriptionPanel: FC<DescriptionPanelProps> = ({ job }) => {
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold mb-2">{job.title}</h2>
+      <a href={job.link} className="text-3xl font-bold mb-2 cursor-pointer" target="_blank" rel="noopener noreferrer">
+        {job.title}
+      </a>
       <h3 className="text-xl font-semibold mb-1">{job.role}</h3>
-      <h4 className="text-md mb-2">{job.timeline}</h4>
+      <h4 className="text-md italic mb-2">{job.timeline}</h4>
       <div className="flex flex-wrap mb-4">
         {job.stack.map((tech) => (
           <Badge key={tech} text={tech} />
