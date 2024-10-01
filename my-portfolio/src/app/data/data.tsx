@@ -61,16 +61,16 @@ export const jobData: Job[] = [
 ];
 
 export const social = [
-  { href: "https://github.com/yourprofile", src: github, alt: "GitHub" },
+  { href: "https://github.com/rothardo", src: github, alt: "GitHub" },
   {
-    href: "https://linkedin.com/in/yourprofile",
+    href: "https://linkedin.com/in/ashwintemkar",
     src: linkedin,
     alt: "LinkedIn",
   },
-  { href: "https://twitter.com/yourprofile", src: twitter, alt: "Twitter" },
-  { href: "https://yourwebsite.com", src: website, alt: "Website" },
+  { href: "https://twitter.com/rothardo", src: twitter, alt: "Twitter" },
+  { href: "https://ashwintemkar.com", src: website, alt: "Website" },
   {
-    href: "https://instagram.com/yourprofile", // Fixed the link to include 'https://'
+    href: "https://instagram.com/rothardo",
     src: instagram,
     alt: "Instagram",
   },
