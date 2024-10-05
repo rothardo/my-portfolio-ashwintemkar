@@ -1,4 +1,4 @@
-import { Job } from "../types/type";
+import { Job, Project } from "../types/type";
 
 import twitter from "@/components/icons/twitter.svg";
 import linkedin from "@/components/icons/linkedin.svg";
@@ -74,4 +74,29 @@ export const social = [
     src: instagram,
     alt: "Instagram",
   },
+];
+
+export const projectData: Project[] = [
+  {
+    id: "1",
+    name: "Portfolio Website",
+    description: "A personal website to showcase my projects and blog posts.",
+    githubUrl: "https://github.com/username/portfolio",
+    liveDemoUrl: "https://username.github.io/portfolio",
+    techStack: ["React", "Tailwind CSS", "TypeScript", "Vercel"],
+    image: github,
+    hoverText: "Check out my portfolio project!",
+  },
+  {
+    id: "2",
+    name: "E-commerce Store",
+    description:
+      "An online store with product listings, cart, and checkout features.",
+    githubUrl: "https://github.com/username/ecommerce-store",
+    liveDemoUrl: "https://ecommerce-store.example.com",
+    techStack: ["Next.js", "Node.js", "MongoDB", "Stripe API"],
+    image: github,
+    hoverText: "Explore the e-commerce store project!",
+  },
+  // Add more projects as needed
 ];
