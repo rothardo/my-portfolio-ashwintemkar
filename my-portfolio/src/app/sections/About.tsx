@@ -2,22 +2,9 @@ import { FC } from "react";
 import ashwin from "@/images/ashwin.jpeg";
 import Image from "next/image";
 import SectionContainer from "@/components/SectionContainer";
+import { technologies } from "../data/data"; // Assuming technologies is an array from your data file
 
 const About: FC = () => {
-  const technologies = [
-    "Java",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "PostgreSQL",
-    "MySQL",
-    "Prisma",
-    "Docker",
-    "AWS",
-    "Tailwind CSS",
-  ];
   return (
     <SectionContainer>
       <div className="max-w-4xl mx-auto mb-6">
@@ -71,18 +58,19 @@ const About: FC = () => {
           <p className="text-base sm:text-lg md:text-xl mb-6 text-accent-light dark:text-accent-light">
             Here are a few technologies I’ve been working with recently:
           </p>
-          <ul className="grid grid-cols-2 gap-2 list-disc pl-5">
-            {technologies.map((tech, index) => (
-              <li
-                key={index}
-                className="text-base sm:text-lg md:text-xl text-accent-light dark:text-accent-light"
-              >
-                {tech}
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
+
+      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 list-disc pl-5 justify-center mx-auto">
+        {technologies.map((tech, index) => (
+          <li
+            key={index}
+            className="text-base sm:text-lg md:text-xl text-accent-light dark:text-accent-light bg-gray-200 dark:bg-gray-800 rounded px-3 py-2"
+          >
+            {tech}
+          </li>
+        ))}
+      </ul>
     </SectionContainer>
   );
 };

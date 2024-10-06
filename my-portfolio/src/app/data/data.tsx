@@ -100,3 +100,18 @@ export const projectData: Project[] = [
   },
   // Add more projects as needed
 ];
+
+export const technologies = [
+  "Java",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "PostgreSQL",
+  "MySQL",
+  "Prisma",
+  "Docker",
+  "AWS",
+  "Tailwind CSS",
+];
