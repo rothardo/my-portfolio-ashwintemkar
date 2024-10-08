@@ -98,7 +98,6 @@ export const projectData: Project[] = [
     image: github,
     hoverText: "Explore the e-commerce store project!",
   },
-  // Add more projects as needed
 ];
 
 export const technologies = [

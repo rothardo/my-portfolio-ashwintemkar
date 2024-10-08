@@ -2,7 +2,7 @@ import { FC } from "react";
 import ashwin from "@/images/ashwin.jpeg";
 import Image from "next/image";
 import SectionContainer from "@/components/SectionContainer";
-import { technologies } from "../data/data"; // Assuming technologies is an array from your data file
+import { technologies } from "../data/data";
 
 const About: FC = () => {
   return (
@@ -65,7 +65,7 @@ const About: FC = () => {
         {technologies.map((tech, index) => (
           <li
             key={index}
-            className="text-base sm:text-lg md:text-xl text-accent-light dark:text-accent-light bg-gray-200 dark:bg-gray-800 rounded px-3 py-2"
+            className="text-base sm:text-lg md:text-xl text-accent-light dark:text-accent-light bg-gray-200 dark:bg-dark-gray rounded px-3 py-2"
           >
             {tech}
           </li>
