@@ -22,7 +22,9 @@ const Social: FC = () => {
                 alt={icon.alt}
                 width={24}
                 height={24}
-                className="transition-colors duration-300 group-hover:filter group-hover:brightness-0 group-hover:invert group-hover:sepia group-hover:brightness-150 group-hover:hue-rotate-[90deg]"
+                className="transition-colors duration-300 group-hover:filter 
+                group-hover:brightness-0 group-hover:invert group-hover:sepia
+                pnpm  group-hover:brightness-150 group-hover:hue-rotate-[90deg]"
               />
             </a>
           </li>

@@ -5,6 +5,7 @@ import linkedin from "@/components/icons/linkedin.svg";
 import github from "@/components/icons/github.svg";
 import website from "@/components/icons/globe.svg";
 import instagram from "@/components/icons/instagram.svg";
+import eas from "@/components/images/eas.jpeg";
 export const jobData: Job[] = [
   {
     id: "0",
@@ -81,10 +82,10 @@ export const projectData: Project[] = [
     id: "1",
     name: "Portfolio Website",
     description: "A personal website to showcase my projects and blog posts.",
-    githubUrl: "https://github.com/username/portfolio",
+    githubUrl: "https://github.com/rothardo/Student-Feedback-System",
     liveDemoUrl: "https://username.github.io/portfolio",
-    techStack: ["React", "Tailwind CSS", "TypeScript", "Vercel"],
-    image: github,
+    techStack: ["Express.js", "Node.js", "MySQL", "AI / ML"],
+    image: eas,
     hoverText: "Check out my portfolio project!",
   },
   {
