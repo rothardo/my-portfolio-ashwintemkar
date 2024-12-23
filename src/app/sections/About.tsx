@@ -52,7 +52,7 @@ const About: FC = () => {
             and delivered tangible results. My open-source contributions are
             just a glimpse of what's coming next.
           </p>
-          <p className="text-base sm:text-lg md:text-xl mb-6 text-highlight-green dark:text-highlight-green">
+          <p className="text-base sm:text-lg md:text-xl mb-6 text-highlight-white dark:text-highlight-white">
             There's more to come as I continue my journey—stay tuned!
           </p>
           <p className="text-base sm:text-lg md:text-xl mb-6 text-accent-light dark:text-accent-light">
@@ -61,11 +61,11 @@ const About: FC = () => {
         </div>
       </div>
 
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 list-disc pl-5 justify-center mx-auto">
+      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 pl-5 justify-center mx-auto custom-bullets">
         {technologies.map((tech, index) => (
           <li
             key={index}
-            className="text-base sm:text-lg md:text-xl text-accent-light dark:text-accent-light bg-gray-200 dark:bg-dark-gray rounded px-3 py-2"
+            className="text-sm sm:text-base md:text-lg text-accent-light dark:text-accent-light bg-gray-200 dark:bg-dark-gray rounded px-2 py-1"
           >
             {tech}
           </li>

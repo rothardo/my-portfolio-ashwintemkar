@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface Job {
   id: string;
   title: string;
@@ -15,6 +17,6 @@ export interface Project {
   githubUrl: string;
   liveDemoUrl?: string;
   techStack: string[];
-  image: string;
+  image: StaticImageData;
   hoverText?: string;
 }

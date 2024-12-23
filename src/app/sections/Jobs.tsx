@@ -22,7 +22,7 @@ const Jobs: FC = () => {
           selectedJobId={selectedJob?.id}
           onSelectJob={setSelectedJob}
         />
-        <div className="flex-1">
+        <div className="flex-1 overflow-x-auto">
           <DescriptionPanel job={selectedJob} />
         </div>
       </div>

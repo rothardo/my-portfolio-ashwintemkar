@@ -8,10 +8,10 @@ interface SideProps {
 const Side: FC<SideProps> = ({ children, orientation }) => {
   return (
     <div
-      className={`fixed ${
+      className={`hidden sm:flex fixed ${
         orientation === "left" ? "left-8" : "right-[calc(95vw-100%)]"
       } 
-                  top-1/2 transform -translate-y-1/2 w-auto flex flex-col items-center`}
+      top-1/2 transform -translate-y-1/2 w-auto flex-col items-center`}
     >
       {children}
     </div>

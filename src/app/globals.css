@@ -4,16 +4,16 @@
 @import "/src/components/css/fonts.css";
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 44, 44, 44; /* dark-gray */
+  --background-start-rgb: 255, 255, 255; /* #FFFFFF */
+  --background-end-rgb: 255, 255, 255; /* #FFFFFF */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 31, 41, 55;
-    --background-end-rgb: 17, 24, 39;
+    --foreground-rgb: 255, 255, 255; /* #FFFFFF */
+    --background-start-rgb: 44, 44, 44; /* dark-gray */
+    --background-end-rgb: 44, 44, 44; /* dark-gray */
   }
 }
 
@@ -41,13 +41,13 @@ pre {
 }
 
 ::selection {
-  background-color: #4caf50;
+  background-color: #000000;
   color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   ::selection {
-    background-color: #2d6a4f;
+    background-color: #000000;
     color: #ffffff;
   }
 }
@@ -59,4 +59,18 @@ pre {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+.custom-bullets li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.custom-bullets li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }

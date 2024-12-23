@@ -6,6 +6,7 @@ import github from "@/components/icons/github.svg";
 import website from "@/components/icons/globe.svg";
 import instagram from "@/components/icons/instagram.svg";
 import eas from "@/components/images/eas.jpeg";
+import eletroverse from "@/components/images/electroverse.png";
 export const jobData: Job[] = [
   {
     id: "0",
@@ -37,7 +38,7 @@ export const jobData: Job[] = [
     description: [
       "Engineered SIMGILE, a suite of 12+ interconnected B2B apps designed to streamline business processes, leading to a 40% boost in efficiency for both startups and enterprise teams.",
       "Designed collaborative tools—from task management to document repositories—enhancing cross-functional team collaboration and resource centralization.",
-      "Architected scalable microservices to support SIMGILE’s seamless expansion, leveraging J2EE, JPA, and MySQL, which optimized the app’s modularity and performance.",
+      "Architected scalable microservices to support SIMGILE's seamless expansion, leveraging J2EE, JPA, and MySQL, which optimized the app’s modularity and performance.",
       "Built financial tools for tracking CAPEX and OPEX, delivering real-time financial insights and enabling stakeholders to make data-driven decisions faster.",
     ],
     stack: ["Java", "JSF", "J2EE", "Eclipse link", "MySQL"],
@@ -80,24 +81,34 @@ export const social = [
 export const projectData: Project[] = [
   {
     id: "1",
-    name: "Portfolio Website",
-    description: "A personal website to showcase my projects and blog posts.",
-    githubUrl: "https://github.com/rothardo/Student-Feedback-System",
-    liveDemoUrl: "https://username.github.io/portfolio",
-    techStack: ["Express.js", "Node.js", "MySQL", "AI / ML"],
-    image: eas,
-    hoverText: "Check out my portfolio project!",
+    name: "Electroverse(E-Commerce Store)",
+    description:
+      "An online store with Electronics product listings, cart, and checkout features.",
+    githubUrl: "https://github.com/rothardo/electroverse",
+    liveDemoUrl: "https://github.com/rothardo/electroverse",
+    techStack: [
+      "Next.js",
+      "Node.js",
+      "React.js",
+      "PostgreSQL",
+      "Prisma",
+      "Docker",
+      "Tailwind",
+    ],
+    image: eletroverse,
+    hoverText: "Explore the e-commerce store project!",
   },
+
   {
     id: "2",
-    name: "E-commerce Store",
+    name: "Student Feedback System",
     description:
-      "An online store with product listings, cart, and checkout features.",
-    githubUrl: "https://github.com/username/ecommerce-store",
-    liveDemoUrl: "https://ecommerce-store.example.com",
-    techStack: ["Next.js", "Node.js", "MongoDB", "Stripe API"],
-    image: github,
-    hoverText: "Explore the e-commerce store project!",
+      "An Intelligent feedback platform that helps students provide better feedback to teachers, leading to improved academic performance and enhanced teaching methods.",
+    githubUrl: "https://github.com/rothardo/Student-Feedback-System",
+    liveDemoUrl: "https://username.github.io/feedback-system",
+    techStack: ["Node.js", "Express.js", "MySQL", "AI"],
+    image: eas,
+    hoverText: "Explore the student feedback system project!",
   },
 ];
 

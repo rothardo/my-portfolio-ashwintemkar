@@ -5,7 +5,7 @@ const Hero: FC = () => {
   return (
     <SectionContainer>
       <div className="flex flex-col items-start max-w-6xl mx-auto text-left">
-        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium mb-4 text-highlight-green font-code">
+        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium mb-4 text-highlight-white font-code">
           Hi, I am
         </h3>
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 text-accent-light dark:text-white font-sans">
@@ -21,7 +21,7 @@ const Hero: FC = () => {
             href="https://pamgro.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-highlight-green cursor-pointer"
+            className="text-highlight-white cursor-pointer"
           >
             Pamgro
           </a>{" "}
@@ -30,7 +30,7 @@ const Hero: FC = () => {
             href="https://wisestep.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-highlight-green cursor-pointer"
+            className="text-highlight-white cursor-pointer"
           >
             Wisestep
           </a>

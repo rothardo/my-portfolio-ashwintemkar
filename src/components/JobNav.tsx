@@ -18,8 +18,8 @@ const JobNav: FC<JobNavProps> = ({ jobData, selectedJobId, onSelectJob }) => {
             className={`flex-none cursor-pointer p-4 transition-all duration-300 relative
               ${
                 selectedJobId === job.id
-                  ? "bg-green-200 dark:bg-green-800 bg-opacity-75"
-                  : "hover:bg-green-50 dark:hover:bg-green-800 bg-opacity-50"
+                  ? "bg-gray-800 dark:bg-gray-800 bg-opacity-75"
+                  : "hover:bg-gray-50 dark:hover:bg-gray-800 bg-opacity-50"
               }`}
             aria-selected={selectedJobId === job.id}
             role="option"
@@ -34,10 +34,17 @@ const JobNav: FC<JobNavProps> = ({ jobData, selectedJobId, onSelectJob }) => {
               {job.title}
             </span>
             <span
-              className={`absolute left-0 top-0 bottom-0 w-1 ${
+              className={`absolute left-0 top-0 bottom-0 w-1 md:block hidden ${
                 selectedJobId === job.id
-                  ? "bg-green-500 dark:bg-green-300"
+                  ? "bg-gray-500 dark:bg-gray-300"
                   : "bg-gray-300 dark:bg-gray-600"
+              }`}
+            ></span>
+            <span
+              className={`absolute bottom-0 left-0 right-0 h-1 md:hidden ${
+                selectedJobId === job.id
+                  ? "bg-gray-500 dark:bg-gray-300"
+                  : "bg-transparent"
               }`}
             ></span>
           </li>

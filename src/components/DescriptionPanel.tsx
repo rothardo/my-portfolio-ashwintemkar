@@ -18,7 +18,7 @@ const DescriptionPanel: FC<DescriptionPanelProps> = ({ job }) => {
       </a>
       <h3 className="text-xl font-semibold mb-1">{job.role}</h3>
       <h4 className="text-md italic mb-2">{job.timeline}</h4>
-      <div className="flex flex-wrap mb-4">
+      <div className="flex flex-wrap gap-2 mb-4">
         {job.stack.map((tech) => (
           <Badge key={tech} text={tech} />
         ))}

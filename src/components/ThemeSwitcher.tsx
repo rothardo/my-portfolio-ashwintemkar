@@ -49,14 +49,14 @@ const ThemeSwitcher = () => {
         />
         <div
           className={`w-16 h-8 flex items-center rounded-full shadow-inner transition-colors duration-300 ease-in-out ${
-            theme === "dark" ? "bg-gray-700" : "bg-gray-200"
+            theme === "dark" ? "bg-dark-gray" : "bg-gray-200"
           }`}
         >
           <div
             className={`w-8 h-8 flex items-center justify-center rounded-full transition-transform duration-300 ease-in-out ${
               theme === "dark"
-                ? "bg-gray-800 translate-x-8"
-                : "bg-yellow-400 translate-x-0"
+                ? "bg-dark-gray translate-x-8"
+                : "bg-#FFFFFF translate-x-0"
             }`}
           >
             {theme === "dark" ? (

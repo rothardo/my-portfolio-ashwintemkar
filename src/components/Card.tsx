@@ -32,7 +32,7 @@ const Card: FC<CardProps> = ({ card }) => {
         </p>
         <div className="mt-4">
           <p className="text-sm font-semibold text-gray-500">Tech Stack:</p>
-          <ul className="flex flex-wrap mt-1 space-x-2">
+          <ul className="flex flex-wrap mt-1 gap-2">
             {card.techStack.map((tech) => (
               <li
                 key={tech}
